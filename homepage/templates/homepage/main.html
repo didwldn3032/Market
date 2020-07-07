@@ -1,0 +1,11 @@
+{% extends 'menu.html' %}
+{% load static%}
+{%block content%}
+<br><br>
+<center><h1>"DGU Market"</h1>
+    <img  src="{% static 'images/sale2.png' %}" alt="sale2 image"><a href="{% url 'homepage:delivery' %}" tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">무료배송 제품 보러가기
+</a>
+    <br><br><br>
+<img src="{% static 'images/dgulogo.jpg' %}" alt="dgulogo image"></center>
+
+{%endblock%}
