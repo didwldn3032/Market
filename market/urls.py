@@ -20,4 +20,5 @@ from homepage.views import main,food,fashion
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('homepage.urls')),
+    path('posts/', include('posts.urls')),
 ]
