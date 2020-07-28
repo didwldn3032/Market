@@ -6,7 +6,8 @@ def new(request):
 
 def create(request):   
     if request.method == "POST":       
-        title = request.POST.get('title')       
+        title = request.POST.get('title')
+        user = request.user      
         content = request.POST.get('content')       
         Post.objects.create(title=title, content=content)
         image = request.FILES.get('image')
